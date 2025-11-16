@@ -1,27 +1,57 @@
+/* Global styling */
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    background-color: #f5f7fa;  /* light background */
 }
 
-/* Center heading */
+/* Main Heading */
 h1 {
     text-align: center;
+    color: #ffffff;
+    background-color: #4A148C;   /* purple theme */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 28px;
 }
 
-/* Table styling */
+/* Table Container */
+.table-container {
+    overflow-x: auto;
+}
+
+/* Table Design */
 table {
     width: 100%;
     border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-th, td {
-    border: 1px solid #333;
-    padding: 10px;
-    text-align: center;
-}
-
+/* Table Header Colors */
 th {
-    background-color: #f0f0f0;
+    background-color: #7E57C2;  /* medium purple */
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+}
+
+/* Table data styling */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f3e5f5;  /* light violet row */
+}
+
+tr:hover {
+    background-color: #e1bee7; /* hover effect */
+    transition: 0.3s;
 }
 
 /* Responsive Image - 1:1 Square Ratio */
@@ -30,15 +60,16 @@ th {
     aspect-ratio: 1/1;
     overflow: hidden;
     margin: auto;
+    border-radius: 8px;
 }
 
 .img-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* ensures 1:1 without distortion */
+    object-fit: cover;
 }
 
-/* Responsive table on mobile */
+/* Mobile Responsive */
 @media (max-width: 600px) {
     table, tr, td, th {
         font-size: 14px;
