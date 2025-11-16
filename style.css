@@ -2,7 +2,10 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background-color: #f5f7fa;  /* light background */
+
+    /* Light Purple Gradient Background */
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7, #d1c4e9);
+    background-attachment: fixed;  /* smooth scrolling */
 }
 
 /* Main Heading */
